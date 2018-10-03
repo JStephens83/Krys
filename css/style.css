@@ -1,0 +1,282 @@
+
+
+@font-face {
+  font-family: 'KrysFont';
+  src: url("../font/HelveticaNeueLTStdCn.woff") format('woff');
+}
+
+body{
+	background-color: rgba(79,172,219,1);
+	color: rgba(255,255,255,1);
+	font-family: 'KrysFont', sans-serif;
+	margin: 0;
+}
+
+
+/* Logo */
+
+#logoK{
+	display: block;
+	margin: 0 auto;
+	max-width: 50%;
+	animation-name: logoKrys;
+	animation-iteration-count: 1;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+}
+
+
+
+/****1ere page****/
+@keyframes textTop{
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(0%);}
+}
+
+#one, #two, #three{
+	display: block;
+	transform: translateX(200%);
+	animation-name: textTop;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	letter-spacing: 1px;
+}
+
+#two{
+	animation-delay: 0.2s;
+}
+
+#three{
+	animation-delay: 0.4s;	
+}
+
+#rentre{
+	margin: 10% auto;
+	opacity: 1;
+}
+
+#rentre p{
+	display: block;
+	margin: 0 auto;
+	max-width: 60%;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.byebye{
+	display: none;
+}
+
+
+
+/****2eme page****/
+.byebye2{
+	display: none;
+}
+
+#pack{
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+#oneP, #twoP, #threeP, #threeBis{
+	margin: 0 auto;
+	letter-spacing: 4px;
+
+	transform: translateX(200%);
+	animation-name: Konnecte;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+#oneP{
+	animation-delay: 0.8s;
+}
+
+#twoP{
+	animation-delay: 1s;
+}
+
+#threeP{
+	font-size: 0.6em;
+	padding-top: 2%;
+	animation-delay: 1.2s;
+}
+
+#threeBis{
+	font-size: 2.5em;
+	animation-delay: 1.4s;
+}
+
+#smallLines{
+	width: 100%;
+	position: absolute;
+	bottom: 42%;
+	padding: 0 7px 0 2px;
+}
+
+#fourP, #fiveP, #sixP{
+	font-size: 0.5em;
+	font-weight: 100;
+	width: 100%;
+	text-align: justify;
+    text-justify: inter-word;
+	margin: 0 auto;
+	letter-spacing: 2px;
+
+	transform: translateX(200%);
+	animation-name: Konnecte;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 2.5s;
+}
+
+@keyframes Konnecte{
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(0%);}
+}
+
+.byebyeSmall{
+	display: none;
+}
+
+
+
+/****3eme page*****/
+.byebye3{
+	display: none;
+}
+#optic{
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	font-size: 1.8em;
+}
+
+#sevenP, #eightP, #nineP, #tenP{
+	margin: 0 auto;
+	letter-spacing: 4px;
+
+	transform: translateX(200%);
+	animation-name: Paire;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes Paire{
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(0%);}
+}
+
+#sevenP{
+	animation-delay: 0.8s;
+}
+
+#eightP{
+	animation-delay: 1s;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#nineP{
+	animation-delay: 1.2s;
+}
+
+#tenP{
+	animation-delay: 1.4s;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+
+/****4eme page****/
+.byebye4{
+	display: none;
+}
+
+#plan{
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#adresse{
+	width: 50%;
+	margin: 10% auto;
+	max-width: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+#rectangle{
+	border: 1px solid rgba(255,255,255,1);
+	margin: 10% auto;
+	width: 70%;
+	padding-bottom: 1%;
+}
+
+a{
+	display: inline;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	letter-spacing: 1px;
+}
+#here{
+	position: relative;
+	top: 0.2em;
+	display: inline;
+	width: 12%;
+}
+
+#elevenP, #twelveP, #thirteenP{
+	margin: 0 auto;
+	opacity: 0;
+}
+
+/**** Vidéo ****/
+#video{
+	position: absolute;
+	bottom: 0;
+	margin-top: 8%;
+	margin-bottom: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+#video video{
+	display: block;
+	margin: 0 auto;
+}
+
+/**** Map ****/
+.byeMap{
+	display: none;
+}
+
+#map{
+	position: absolute;
+	bottom: 0;
+	margin-top: 8%;
+	margin-bottom: 0;
+	width: 100%;
+	height: 45%;
+	z-index: 2;
+
+	transform: translateY(200%);
+	animation-name: Map;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes Map{
+	0%{transform: translateY(100%);}
+	100%{transform: translateY(0%);}
+}
